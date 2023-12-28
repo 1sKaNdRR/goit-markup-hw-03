@@ -3,21 +3,61 @@ font-family: "Roboto",sans-serif;
 background-color: #FFFFFF;
 color: #434455;
 margin: 0;
-justify-content: center;
-flex-shrink: 0;
 line-height: 60px;
+}
+p, h1,h2,h3{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 a {
     text-decoration: none;
+    color: currentColor;
 }
 ul,
 ol {
     list-style: none;
     margin: 0;
+    padding: 0;
+    
 }
-header{
-    flex-shrink: 0;
+button{
+    cursor: pointer;
+} 
+
+address{
+    font-style: normal;
 }
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+img {
+display: block;
+}
+/**---------------------------------------------*/
+/**------------header---------------------------*/
+.header{
+padding-top: 24px;
+padding-bottom: 24px;
+border-bottom: 1px solid #E7E9FC;
+}
+
 .logo{
     color: #4D5AE5;
         font-family: "Raleway",sans-serif;
@@ -60,8 +100,14 @@ header{
     color: #404bbf;
 }
 
-.first-section{
-background-color: #2e2f42;
+/**-----------------------------------------------*/
+/**------------hero-section-----------------------*/
+
+.hero-section{
+    background-color: #2e2f42;
+}
+.hero-container{
+padding: 188px 316px 292px;
 }
 .first-title{
 font-size: 56px;
@@ -69,6 +115,8 @@ letter-spacing: 0.02em;
 line-height: 1.07;
 text-align: center;
 color: #FFFFFF;
+max-width: 496px;
+padding-bottom: 48px;
 }
 .main-button{
     background-color: #4D5AE5;
@@ -86,22 +134,38 @@ color: #FFFFFF;
 .main-button:focus {
     background-color: #404bbf;
 }
-.others-header{
+
+/**---------------------------------------------*/
+/**------------feature-section---------------------*/
+
+.section-feature{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.title-feature{
 font-weight: 500;
 font-size: 20px;
 letter-spacing: 0.02em;
 line-height: 1.2;
 color: #2e2f42;
+padding-bottom: 8px;
 }
-.page-text{
-    font-size: 16px;
+.text-feature{
+font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/**---------------------------------------------*/
+/**------------our-team-------------------------*/
+
 .our-team{
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 .header-two{
     font-weight: 700;
     font-size: 36px;
@@ -110,17 +174,38 @@ color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-bottom: 72px;
 }
 .background-list{
     background-color: #FFFFFF
 }
-.footer-color{
+.others-header {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+.page-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding-bottom: 32px;
+}
+/**----------------------------------------------*/
+/**------------footer----------------------------*/
+.footer{
     background-color: #2e2f42;
+    padding: 101.5px 1020px 100px 156px;
 }
 .footer-text{
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    padding-top: 17.5px;
 }
 .footer-logo{
     color: #F4F4FD;
