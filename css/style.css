@@ -27,6 +27,9 @@ button{
 address{
     font-style: normal;
 }
+img {
+    display: block;
+}
 .container {
     width: 100%;
     max-width: 1158px;
@@ -47,9 +50,11 @@ address{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-img {
-display: block;
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 /**---------------------------------------------*/
 /**------------header---------------------------*/
 .header{
@@ -57,7 +62,13 @@ padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid #E7E9FC;
 }
-
+.header-container{
+    display: flex;
+}
+.navigation{
+display: flex;
+align-items: center;
+}
 .logo{
     color: #4D5AE5;
         font-family: "Raleway",sans-serif;
@@ -67,9 +78,14 @@ border-bottom: 1px solid #E7E9FC;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-right: 76px;
 }
 .stidio-logo{
     color: #2E2F42;
+}
+.nav-list{
+display: flex;
+gap: 40px;
 }
 .menu-nav{
     color: #2E2F42;
@@ -78,6 +94,8 @@ border-bottom: 1px solid #E7E9FC;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
+        display: block;
 }
 .menu-nav:hover{
     color: #404bbf;
@@ -85,8 +103,13 @@ border-bottom: 1px solid #E7E9FC;
 .menu-nav:focus{
     color: #404bbf;
 }
-.adress-list{
+.address{
     font-style: normal;
+    margin-left: auto;
+}
+.address-list{
+    display: flex;
+    gap: 40px;
 }
 .contact{
     color:#434455;
@@ -107,9 +130,12 @@ border-bottom: 1px solid #E7E9FC;
     background-color: #2e2f42;
 }
 .hero-container{
+display: flex;
+flex-direction: column;
+align-items: center;
 padding: 188px 316px 292px;
 }
-.first-title{
+.first-title {
 font-size: 56px;
 letter-spacing: 0.02em;
 line-height: 1.07;
@@ -117,8 +143,12 @@ text-align: center;
 color: #FFFFFF;
 max-width: 496px;
 padding-bottom: 48px;
+
 }
 .main-button{
+    width: 100%;
+    max-width: 169px;
+    min-width: 169px;
     background-color: #4D5AE5;
     font-weight: 500;
     font-size: 16px;
@@ -126,6 +156,11 @@ padding-bottom: 48px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 16px 32px;
+    white-space: nowrap;
 }
 .main-button:hover {
     background-color: #404bbf;
@@ -135,14 +170,18 @@ padding-bottom: 48px;
     background-color: #404bbf;
 }
 
-/**---------------------------------------------*/
+/**------------------------------------------------*/
 /**------------feature-section---------------------*/
 
 .section-feature{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background: #FFF; 
 }
-.title-feature{
+.feature-containar {
+    display: flex;
+    gap: 24px;
+
+}
+.title-feature {
 font-weight: 500;
 font-size: 20px;
 letter-spacing: 0.02em;
@@ -150,11 +189,14 @@ line-height: 1.2;
 color: #2e2f42;
 padding-bottom: 8px;
 }
-.text-feature{
+.text-feature {
 font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.fearures-item{
+    width: calc((100% - 72px) / 4);
 }
 
 /**---------------------------------------------*/
@@ -162,10 +204,13 @@ font-size: 16px;
 
 .our-team{
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
+.team-container{
+display: flex;
+gap: 24px;
+
+}
 .header-two{
     font-weight: 700;
     font-size: 36px;
@@ -179,7 +224,13 @@ font-size: 16px;
 .background-list{
     background-color: #FFFFFF
 }
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .others-header {
+    display: flex;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -187,21 +238,66 @@ font-size: 16px;
     color: #2e2f42;
     padding-top: 32px;
     padding-bottom: 8px;
+    justify-content: center;
 }
 .page-text {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding-bottom:32px;
+    justify-content: center;
+}
+/**----------------------------------------------*/
+/**------------portfolio-------------------------*/
+.section-portfolio{
+    background: #FFF;
+}
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.portfolio-header{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: #2e2f42;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+.portfolio-item{
+
+}
+
+.portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;;
 }
 /**----------------------------------------------*/
 /**------------footer----------------------------*/
 .footer{
     background-color: #2e2f42;
-    padding: 101.5px 1020px 100px 156px;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
 .footer-text{
+    max-width: 100%;
+    width: 264px;
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
